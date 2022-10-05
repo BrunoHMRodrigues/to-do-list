@@ -16,11 +16,15 @@ buttonNewTask.addEventListener("click", addTaskToList);
 
 const olList = document.getElementById("lista-tarefas");
 function clickListItem (event) {
-    const itemLista = event.target;
+    const itemList = event.target;
 
     clearSelected ();
 
-    itemLista.className = "selected";
+    if (itemList.className === "completed") {
+        itemList.className = "selected completed";
+    } else {
+        itemList.className = "selected";
+    }
 }
 olList.addEventListener("click", clickListItem);
 
@@ -32,3 +36,17 @@ function clearSelected () {
     }
     
 }
+
+function markTask (event) {
+    const itemList = event.target;
+
+    if (itemList.className === "selected completed") {
+        console.log("entrei completed");
+        itemList.className = "selected";
+    } else {
+        console.log("entrei");
+        itemList.className = "selected completed"
+    }
+    
+}
+olList.addEventListener("dblclick", markTask)
