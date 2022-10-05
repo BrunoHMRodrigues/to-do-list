@@ -4,3 +4,7 @@
 #criar-tarefa {
     display: inline-block;
 }
+
+.selected {
+    background-color: gray;
+}

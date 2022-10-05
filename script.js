@@ -18,6 +18,6 @@ const olList = document.getElementById("lista-tarefas");
 function clickListItem (event) {
     const itemLista = event.target;
 
-    itemLista.style.backgroundColor = "gray";
+    itemLista.className = "selected";
 }
 olList.addEventListener("click", clickListItem);
