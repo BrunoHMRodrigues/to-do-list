@@ -72,3 +72,36 @@ function removeCompletedTasks () {
     }
 }
 buttonClearCompleted.addEventListener("click", removeCompletedTasks);
+
+const buttonSaveTasks = document.getElementById("salvar-tarefas");
+
+function saveTasks () {
+    const listItems = document.querySelectorAll("ol li");
+    let arrayTasks = [];
+
+    for (let index = 0; index < listItems.length; index+=1) {
+        arrayTasks[index] = listItems[index];        
+    }
+    localStorage.setItem("taskList", JSON.stringify(arrayTasks));
+}
+buttonSaveTasks.addEventListener("click", saveTasks);
+
+function retrieveStoragedTasks () {
+    const savedTasks = JSON.parse(localStorage.getItem("taskList"));
+
+    console.log(savedTasks);
+    if (savedTasks !== null) {
+
+        for (let index = 0; index < savedTasks.length; index+=1) {
+            const listItem = document.createElement("li")
+            listItem = savedTasks[index]; // como pegar as propriedades do local storage? criar 2 storage? criar um sotore por propriedade que quero salvar?
+            console.log(listItem);
+            olList.appendChild(listItem);
+        }        
+    }
+}
+
+function initiate () {
+    retrieveStoragedTasks ();
+}
+window.onload = initiate ();
