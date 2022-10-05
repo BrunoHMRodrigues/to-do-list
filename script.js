@@ -13,3 +13,11 @@ function addTaskToList () {
     inputBox.value = "";
 }
 buttonNewTask.addEventListener("click", addTaskToList);
+
+const olList = document.getElementById("lista-tarefas");
+function clickListItem (event) {
+    const itemLista = event.target;
+
+    itemLista.style.backgroundColor = "gray";
+}
+olList.addEventListener("click", clickListItem);
