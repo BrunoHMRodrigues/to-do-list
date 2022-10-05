@@ -18,6 +18,17 @@ const olList = document.getElementById("lista-tarefas");
 function clickListItem (event) {
     const itemLista = event.target;
 
+    clearSelected ();
+
     itemLista.className = "selected";
 }
 olList.addEventListener("click", clickListItem);
+
+function clearSelected () {
+    const selectedItem = document.querySelector(".selected");
+
+    if (selectedItem) {
+        selectedItem.classList.remove("selected");
+    }
+    
+}
