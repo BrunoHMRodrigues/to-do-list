@@ -61,3 +61,14 @@ function clearList () {
     }    
 }
 buttonClear.addEventListener("click", clearList);
+
+const buttonClearCompleted = document.getElementById("remover-finalizados");
+
+function removeCompletedTasks () {
+    const completedItems = document.querySelectorAll(".completed");
+
+    for (let index = 0; index < completedItems.length; index+=1) {
+        completedItems[index].remove();        
+    }
+}
+buttonClearCompleted.addEventListener("click", removeCompletedTasks);
