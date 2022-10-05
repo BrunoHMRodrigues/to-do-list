@@ -50,3 +50,14 @@ function markTask (event) {
     
 }
 olList.addEventListener("dblclick", markTask)
+
+const buttonClear = document.getElementById("apaga-tudo");
+
+function clearList () {
+    const allLiItems = olList.childElementCount;
+
+    for (let index = 0; index < allLiItems; index+=1) {
+        olList.firstChild.remove();        
+    }    
+}
+buttonClear.addEventListener("click", clearList);
