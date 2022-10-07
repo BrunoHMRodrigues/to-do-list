@@ -1,6 +1,7 @@
 body {
-    /* background-image: url(./Images/giphy\ \(12\).gif);
-    background-size: 80vh; */
+    /* background-image: url(./Images/giphy\ \(9\).gif);
+    background-size: 100% 100%; */
+    background-image: linear-gradient(to top, #ff0f7b, #ff8989, #f89b29);
 }
 
 #secao-titulo-pagina {
@@ -37,26 +38,43 @@ body {
 #texto-tarefa {
     display: inline-block;
     width: 20vw;
+    border-radius: 0.8vh;
 }
 #criar-tarefa {
     display: inline-block;
-    padding: 0.5vh;
-}
-#criar-tarefa {
-    display: inline-block;
-    padding: 0.5vh;
+    width: max-content;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border-radius: 1vh;
 }
 #apaga-tudo {
     display: inline-block;
-    padding: 0.5vh;
+    width: max-content;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border-radius: 1vh;
 }
 #remover-finalizados {
     display: inline-block;
-    padding: 0.5vh;
+    width: max-content;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border-radius: 1vh;
 }
 #salvar-tarefas {
     display: inline-block;
-    padding: 0.5vh;
+    width: max-content;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border-radius: 1vh;
 }
 #buttons-criar-salvar {
     margin: auto;
@@ -103,17 +121,20 @@ body {
     display: block;
     width: 5vw;
     height: 3vh;
-    margin: 2vh;
+    margin: 2vh;    
+    border-radius: 1vh;
 }
 #remover-selecionado {
     display: block;
     width: 5vw;
     height: 3vh;
     margin: 2vh;
+    border-radius: 1vh;
 }
 #mover-baixo {
     display: block;
     width: 5vw;
     height: 3vh;
     margin: 2vh;
+    border-radius: 1vh;
 }
