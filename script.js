@@ -14,6 +14,16 @@ function addTaskToList() {
 }
 buttonNewTask.addEventListener("click", addTaskToList);
 
+const inputText = document.getElementById("texto-tarefa");
+
+function keypressEnter (event) {
+    console.log(event.key);
+    if (event.key === "Enter") {
+        addTaskToList();
+    }
+}
+inputText.addEventListener("keypress", keypressEnter);
+
 const olList = document.getElementById("lista-tarefas");
 function clickListItem(event) {
     const itemList = event.target;
