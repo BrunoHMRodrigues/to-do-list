@@ -11,3 +11,8 @@
 .completed {
     text-decoration: line-through solid black;
 }
+
+#lista-tarefas {
+    width: 50vw;
+    height: max-content;
+}
