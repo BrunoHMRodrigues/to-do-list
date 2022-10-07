@@ -1,8 +1,72 @@
+body {
+    /* background-image: url(./Images/giphy\ \(12\).gif);
+    background-size: 80vh; */
+}
+
+#secao-titulo-pagina {
+    width: 100vw;
+    height: 5vh;
+}
+#titulo-pagina {
+    font-size: 4vh;
+    font-weight: 900;
+    width: max-content;
+    margin: auto;
+}
+
+#section-input-task {
+    margin: auto;
+    width: max-content;
+    border: 1px solid black;
+    border-radius: 3vh;
+    padding: 2vh;
+}
+
+#secao-principal {
+    margin: auto;
+    width: 65vw;
+    height: 70vh;
+    padding: 50px;
+    background-image: url(./Images/giphy\ \(12\).gif);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+    border: 0.5vh solid rgb(125, 16, 16);
+    border-radius: 4vh;
+}
+
 #texto-tarefa {
     display: inline-block;
+    width: 20vw;
 }
 #criar-tarefa {
     display: inline-block;
+    padding: 0.5vh;
+}
+#criar-tarefa {
+    display: inline-block;
+    padding: 0.5vh;
+}
+#apaga-tudo {
+    display: inline-block;
+    padding: 0.5vh;
+}
+#remover-finalizados {
+    display: inline-block;
+    padding: 0.5vh;
+}
+#salvar-tarefas {
+    display: inline-block;
+    padding: 0.5vh;
+}
+#buttons-criar-salvar {
+    margin: auto;
+    margin-top: 1vh;
+    width: max-content;
+}
+#buttons-limpar {
+    margin: auto;
+    margin-top: 1vh;
+    width: max-content;
 }
 
 .selected {
@@ -12,7 +76,44 @@
     text-decoration: line-through solid black;
 }
 
+#secao-lista-tarefas {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    transparent: 0.9;
+    border: 1px solid black;
+    border-radius: 3vh;
+    margin-top: 5vh;
+}
 #lista-tarefas {
     width: 50vw;
     height: max-content;
+}
+#titulo-lista {
+    width: max-content;
+    text-align: center;
+    margin: auto;
+}
+
+#buttons-list {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+#mover-cima {
+    display: block;
+    width: 5vw;
+    height: 3vh;
+    margin: 2vh;
+}
+#remover-selecionado {
+    display: block;
+    width: 5vw;
+    height: 3vh;
+    margin: 2vh;
+}
+#mover-baixo {
+    display: block;
+    width: 5vw;
+    height: 3vh;
+    margin: 2vh;
 }

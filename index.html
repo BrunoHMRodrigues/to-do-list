@@ -8,28 +8,39 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>Minha Lista de Tarefas</header>
+    <section id="secao-titulo-pagina">
+        <header id="titulo-pagina">Minha Lista de Tarefas</header>
+    </section>
 
     <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
 
     <section id="section-input-task">
         <input id="texto-tarefa" type="text">
 
-        <button id="criar-tarefa">Adicionar Item</button>
+        <section id="buttons-criar-salvar">
+            <button id="criar-tarefa">Adicionar Item</button>        
+    
+            <button id="salvar-tarefas">Salvar Tarefas</button>
+        </section>
 
-        <button id="apaga-tudo">Limpar Tudo</button>
-
-        <button id="remover-finalizados">Limpar Finalizados</button>
-
-        <button id="salvar-tarefas">Salvar Tarefas</button>
+        <section id="buttons-limpar">
+            <button id="apaga-tudo">Limpar Tudo</button>
+    
+            <button id="remover-finalizados">Limpar Finalizados</button>
+        </section>
     </section>
 
-    <ol id="lista-tarefas"></ol>
-
-    <section>
-        <button id="mover-cima">Cima</button>
-        <button id="remover-selecionado">Remover</button>
-        <button id="mover-baixo">Baixo</button>
+    <section id="secao-principal">
+        <section id="secao-lista-tarefas">
+            <h3 id="titulo-lista">Tarefas</h3>
+            <ol id="lista-tarefas"></ol>
+        </section>
+    
+        <section id="buttons-list">
+            <button id="mover-cima">Cima</button>
+            <button id="remover-selecionado">Remover</button>
+            <button id="mover-baixo">Baixo</button>
+        </section>
     </section>
 
     
