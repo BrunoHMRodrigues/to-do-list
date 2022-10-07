@@ -1,12 +1,13 @@
 body {
-    /* background-image: url(./Images/giphy\ \(9\).gif);
-    background-size: 100% 100%; */
     background-image: linear-gradient(to top, #ff0f7b, #ff8989, #f89b29);
+    width: 100vw;
+    height: 100vh;
 }
 
 #secao-titulo-pagina {
     width: 100vw;
     height: 5vh;
+    color: white;
 }
 #titulo-pagina {
     font-size: 4vh;
@@ -33,6 +34,26 @@ body {
     margin-top: 2vh;
     border: 0.8vh solid rgb(255, 255, 255);
     border-radius: 4vh;
+}
+#instrucao {
+    color: white;
+    font-weight: 900;
+    width: max-content;
+    height: 2vh;
+    margin: auto;
+    margin-top: 1vh;
+    background-color: #f89b29;
+    border: 1px solid white;
+    border-radius: 3vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+#funcionamento {
+    text-align: center;
+    padding-top: 0.1vh;
+    padding-bottom: 0.1vh;
+    margin: auto;
+    font-size: 1.5vh;
 }
 #secao-lista-botoes {
     width: max-content;
@@ -103,9 +124,10 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid black;
     border-radius: 3vh;
-    margin-top: 5vh;
+    margin-top: 2vh;
     height: 60vh;
     vertical-align: middle;
+    font-size: 2vh;
 }
 #lista-tarefas {
     width: 50vw;
