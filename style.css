@@ -127,7 +127,8 @@ body {
     margin-top: 2vh;
     height: 60vh;
     vertical-align: middle;
-    font-size: 2vh;
+    font-size: 3vh;
+    padding-left: 2vh;
 }
 #lista-tarefas {
     width: 50vw;
